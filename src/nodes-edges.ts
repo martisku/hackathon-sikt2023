@@ -18,7 +18,7 @@ export const mkInteresseMapping: () => Map<Interesse, Set<FagId>> = () => {
 }
 
 export const interesseMapping = mkInteresseMapping();
-export const interesser: readonly Interesse[] = [...interesseMapping.keys()];
+export const interesser: readonly Interesse[] = [...interesseMapping.keys()].sort();
 
 export const findRelevant = (interesse: Interesse | null | undefined): readonly Fag[] => {
     if (interesse) {
