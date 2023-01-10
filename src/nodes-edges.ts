@@ -28,7 +28,7 @@ const findEdges = () => {
         source: node.id,
         target: avhengighet,
         type: edgeType,
-        animated: true
+        animated: false
       }))
       )
   )

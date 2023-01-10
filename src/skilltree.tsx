@@ -54,13 +54,6 @@ const SkillTree = () => {
   const [nodes, setNodes, onNodesChange] = useNodesState(layoutedNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(layoutedEdges);
 
-  const onConnect = useCallback(
-    (params: Edge) =>
-      setEdges((eds) =>
-        addEdge({ ...params, type: ConnectionLineType.SmoothStep, animated: true }, eds)
-      ),
-    []
-  );
   const onLayout = useCallback(
     (direction: string) => {
       const { nodes: layoutedNodes, edges: layoutedEdges } = getLayoutedElements(
@@ -80,10 +73,9 @@ const SkillTree = () => {
       <ReactFlow
         nodes={nodes}
         edges={edges}
+        nodesDraggable={false}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
-        onConnect={onConnect as any}
-        connectionLineType={ConnectionLineType.SmoothStep}
         fitView
       />
       <div className="controls">
