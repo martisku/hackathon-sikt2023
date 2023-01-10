@@ -1,8 +1,8 @@
 export type FagId = string & { tag?: "FagId" }
-const FagId = (str: String): FagId => str as any
+export const FagId = (str: String): FagId => str as any
 
 export type Interesse = string & { tag?: "Interesse" }
-const Interesse = (str: String): Interesse => str as any
+export const Interesse = (str: String): Interesse => str as any
 
 // extractes fra uio.no
 export interface Fag {
