@@ -61,13 +61,13 @@ const SkillTree = () => {
             setNodes([...layouted.nodes]);
             setEdges([...layouted.edges]);
         },
-        [nodes, edges, interesse]
+        [interesse]
     );
 
     const renderedInteresser = interesser.map((i, idx) => <MenuItem key={idx} value={i}>{i}</MenuItem>)
 
     return (
-        <div>
+        <div style={{height: 800}}>
             <Paper elevation={1} sx={{margin: "2em"}}>
                 <FormControl fullWidth>
                     <InputLabel id="demo-simple-select-label">Velg interesse</InputLabel>
