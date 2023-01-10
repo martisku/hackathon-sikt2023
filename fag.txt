@@ -1,0 +1,173 @@
+IN1000 – Introduksjon til objektorientert programmering
+IN1010 – Objektorientert programmering
+IN1020 – Introduksjon til datateknologi
+IN1030 – Systemer, krav og konsekvenser
+IN1050 – Introduksjon til design, bruk, interaksjon
+IN1060 – Bruksorientert design
+IN1080 – Mekatronikk
+IN1140 – Introduksjon til språkteknologi
+IN1150 – Logiske metoder
+IN1900 – Introduksjon i programmering for naturvitenskapelige anvendelser
+IN1910 – Programmering for naturvitenskapelige anvendelser
+IN2000 – Software Engineering med prosjektarbeid
+IN2010 – Algoritmer og datastrukturer
+IN2020 – Metoder i interaksjonsdesign
+IN2030 – Prosjektoppgave i programmering
+IN2040 – Funksjonell programmering
+IN2060 – Digitalteknikk og datamaskinarkitektur
+IN2070 – Digital bildebehandling
+IN2080 – Beregninger og kompleksitet
+IN2090 – Databaser og datamodellering
+IN2100 – Logikk for systemanalyse
+IN2110 – Språkteknologiske metoder
+IN2120 – Informasjonssikkerhet
+IN2140 – Introduksjon til operativsystemer og datakommunikasjon
+IN2150 – IT i organisasjoner
+IN3000 – Operativsystemer
+IN3010 – Transformativt design
+IN3015 – Ultralydavbildning
+IN3020 – Databasesystemer
+IN3030 – Effektiv parallellprogrammering
+IN3040 – Programmeringsspråk
+IN3050 – Introduksjon til kunstig intelligens og maskinlæring
+IN3060 – Semantiske teknologier
+IN3070 – Logikk
+IN3090 – Prosjektoppgave i informatikk: Digital økonomi og ledelse
+IN3110 – Problemløsning med høynivå-språk
+IN3120 – Søketeknologi
+IN3130 – Algoritmer: Design og effektivitet
+IN3140 – Introduksjon til robotikk
+IN3160 – Digital systemkonstruksjon
+IN3170 – Microelectronics
+IN3190 – Digital signalbehandling
+IN3200 – High-Performance Computing and Numerical Projects
+IN3210 – Network and Communications Security
+IN3220 – Å forstå bruk før bruk
+IN3230 – Nettverk
+IN3240 – Testing av programvare
+IN3250 – Prosjektoppgave i informatikk: interaksjonsdesign
+IN3260 – Prosjektoppgave i informatikk: datakommunikasjon
+IN3280 – Forskerlinjen I
+IN3310 – Deep Learning for Image Analysis
+IN4000 – Operativsystemer
+IN4015 – Ultralydavbildning
+IN4020 – Databasesystemer
+IN4030 – Introduksjon til bioinformatikk
+IN4050 – Introduksjon til kunstig intelligens og maskinlæring
+IN4060 – Semantiske teknologier
+IN4070 – Logikk
+IN4080 – Natural Language Processing
+IN4110 – Problemløsning med høynivå-språk
+IN4120 – Søketeknologi
+IN4140 – Introduksjon til robotikk
+IN4150 – Digitale økosystemer
+IN4160 – Digital systemkonstruksjon
+IN4170 – Microelectronics
+IN4180 – Cyber Operations
+IN4190 – Digital signalbehandling
+IN4200 – High-Performance Computing and Numerical Projects
+IN4210 – Network and Communications Security
+IN4220 – Å forstå bruk før bruk
+IN4230 – Nettverk
+IN4240 – Testing av programvare
+IN4270 – Digital Business Development
+IN4310 – Deep Learning for Image Analysis
+IN4330 – Effektiv parallellprogrammering
+IN4340 – Deltakende kvalitative forskningsmetoder
+IN4380 – Digital Transformation of Healthcare
+IN5000 – Qualitative Research Methods
+IN5010 – Design, Technology and Society
+IN5020 – Distribuerte systemer
+IN5030 – Protokoller og ruting i Internett
+IN5040 – Advanced Database Systems for Big Data
+IN5050 – Programming heterogeneous multi-core architectures
+IN5060 – Ytelse i distribuerte systemer
+IN5070 – The future internet protocols
+IN5080 – Sikkerhets- og risikostyring
+IN5090 – Health data and decision-making
+IN5100 – Utvalgte emner i omskrivningslogikk
+IN5110 – Specification and Verification of Parallel Systems
+IN5120 – Tangible interaction
+IN5130 – Uangripelige IT-systemer
+IN5140 – Smarte prosesser og smidige metoder i systemutvikling
+IN5150 – Recent Advancements in Internet Protocols
+IN5160 – Digital Leadership
+IN5170 – Modeller for parallellitet
+IN5180 – Analog Microelectronics Design
+IN5200 – Avansert digital systemkonstruksjon
+IN5210 – Information Systems
+IN5220 – Advanced mixed-signal CMOS integrated circuit design
+IN5230 – Elektrisk støy - beregning og mottiltak
+IN5240 – Design av CMOS RF-integrete kretser
+IN5250 – Seminar i aksjonsforskning
+IN5260 – Low Power IoT nodes
+IN5270 – Numeriske metoder for partielle differensiallikninger
+IN5290 – Ethical Hacking
+IN5320 – Development in platform ecosystems
+IN5340 – Statistisk signalbehandling
+IN5350 – Design av CMOS bildesensor
+IN5360 – Forskerlinjen II
+IN5390 – ICT for Development: Building a Better World?
+IN5410 – Energiinformatikk
+IN5420 – Distributed Blockchain Technologies
+IN5431 – IT and Management
+IN5440 – Selected topics in static analysis
+IN5450 – Array Signal Processing
+IN5470 – Avansert forskningstema i design av IT
+IN5480 – Spesialisering innen forskning i design av IT
+IN5490 – Advanced Topics in Artificial Intelligence for Intelligent Systems
+IN5500 – IT-støttet samarbeid
+IN5510 – Deltakende eksperimentell design
+IN5520 – Digital bildeanalyse
+IN5530 – Research Through Design
+IN5540 – Privacy by Design
+IN5550 – Neural Methods in Natural Language Processing
+IN5570 – Distribuerte objekter
+IN5580 – Computability theory
+IN5600 – Programmering av mobile applikasjoner i tingenes internett
+IN5610 – Advanced Topic in Digital Innovation
+IN5620 – Interaction with AI and autonomous systems
+IN5700 – Tåke Databehandling
+IN5800 – Declarative Data Engineering
+IN9000 – Qualitative Research Methods
+IN9010 – Design, Technology and Society
+IN9020 – Distributed Systems
+IN9030 – Protokoller og ruting i Internett
+IN9040 – Advanced Database Systems for Big Data
+IN9050 – Programming heterogeneous multi-core architectures
+IN9060 – Ytelse i distribuerte systemer
+IN9070 – The Future Internet Protocols
+IN9100 – Utvalgte emner i omskrivningslogikk
+IN9110 – Specification and Verification of Parallel Systems
+IN9120 – Tangible interaction
+IN9130 – Unassailable IT-systems
+IN9140 – Smarte prosesser og smidige metoder i systemutvikling
+IN9150 – Recent Advancements in Internet Protocols
+IN9170 – Modeller for parallellitet
+IN9200 – Avansert digital systemkonstruksjon
+IN9210 – Information Systems
+IN9220 – Advanced mixed-signal CMOS integrated circuit design
+IN9230 – Elektrisk støy - beregning og mottiltak
+IN9240 – Design av CMOS RF-integrete kretser
+IN9260 – Low Power IoT nodes
+IN9270 – Numeriske metoder for partielle differensiallikninger
+IN9290 – Ethical Hacking
+IN9340 – Statistisk signalbehandling
+IN9350 – Design av CMOS bildesensor
+IN9390 – ICT for Development: Building a Better World?
+IN9410 – Energy Informatics
+IN9420 – Distributed Blockchain Technologies
+IN9440 – Selected Topics in Static Analysis
+IN9450 – Array Signal Processing
+IN9490 – Advanced Topics in Artificial Intelligence for Intelligent Systems
+IN9500 – IT-støttet samarbeid
+IN9510 – Deltakende eksperimentell design
+IN9520 – Digital bildeanalyse
+IN9530 – Research Through Design
+IN9540 – Privacy by Design
+IN9550 – Neural Methods in Natural Language Processing
+IN9570 – Distribuerte objekter
+IN9580 – Computability theory
+IN9600 – Programmering av mobile applikasjoner i tingenes internett
+IN9700 – Tåke Databehandling
+IN9900 – Selected Theoretical Topics in Information Systems Development
