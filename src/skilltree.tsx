@@ -6,7 +6,7 @@ import {findEdges, findNodes, interesser} from './nodes-edges';
 import './index.css';
 import {Interesse} from "./model";
 import FormControl from '@mui/material/FormControl';
-import {InputLabel, MenuItem, Select} from "@mui/material";
+import {InputLabel, MenuItem, Paper, Select} from "@mui/material";
 
 const dagreGraph = new graphlib.Graph();
 dagreGraph.setDefaultEdgeLabel(() => ({}));
@@ -48,7 +48,7 @@ const getLayoutedElements = (nodes: any[], edges: any[], direction = 'TB') => {
 
 const SkillTree = () => {
     const [interesse, setInteresse] = useState<Interesse | undefined>(undefined)
-    const layouted = getLayoutedElements([], []);
+    const layouted = getLayoutedElements(findNodes(null), findEdges(findNodes(null)));
     const [nodes, setNodes, onNodesChange] = useNodesState(layouted.nodes);
     const [edges, setEdges, onEdgesChange] = useEdgesState(layouted.edges);
 
@@ -63,31 +63,34 @@ const SkillTree = () => {
         },
         [nodes, edges, interesse]
     );
-    console.warn(interesser)
 
     const renderedInteresser = interesser.map((i, idx) => <MenuItem key={idx} value={i}>{i}</MenuItem>)
 
     return (
-        <div className="layoutflow">
-            <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">Velg interesse</InputLabel>
-                <Select
-                    value={interesse || ""}
-                    label="Velg interesse"
-                    onChange={(ev) => {
-                        onLayout(ev.target.value)
-                    }}
-                > {renderedInteresser}
-                </Select>
-            </FormControl>
-            <ReactFlow
-                nodes={nodes}
-                edges={edges}
-                nodesDraggable={false}
-                onNodesChange={onNodesChange}
-                onEdgesChange={onEdgesChange}
-                fitView
-            />
+        <div>
+            <Paper elevation={1} sx={{margin: "2em"}}>
+                <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">Velg interesse</InputLabel>
+                    <Select
+                        value={interesse || ""}
+                        label="Velg interesse"
+                        onChange={(ev) => {
+                            onLayout(ev.target.value)
+                        }}
+                    > {renderedInteresser}
+                    </Select>
+                </FormControl>
+            </Paper>
+            <div className="layoutflow">
+                <ReactFlow
+                    nodes={nodes}
+                    edges={edges}
+                    nodesDraggable={false}
+                    onNodesChange={onNodesChange}
+                    onEdgesChange={onEdgesChange}
+                    fitView
+                />
+            </div>
         </div>
     );
 };
