@@ -3,15 +3,22 @@ import {Fag, FagId, Interesse} from "./model";
 const position = {x: 0, y: 0};
 const edgeType = 'smoothstep';
 
-export const mkInteresseMapping = () => {
-    const m = new Map<Interesse, readonly FagId[]>()
-    m.set("Java", [FagId("IN1000"), FagId("IN1020")])
-    m.set("Database", [FagId("IN2090"), FagId("IN3020")])
-    m.set("Programmering", [FagId("IN3040"), FagId("IN2010")])
+export const mkInteresseMapping: () => Map<Interesse, Set<FagId>> = () => {
+    const m = new Map<Interesse, Set<FagId>>()
+    Fag.forEach(f => {
+        f.interesser.forEach(i => {
+            if (m.has(i)) {
+                m.get(i)!.add(f.id)
+            } else {
+                m.set(i, new Set<FagId>(f.id))
+            }
+        })
+    })
     return m;
 }
+
 export const interesseMapping = mkInteresseMapping();
-export const interesser = [...interesseMapping.keys()];
+export const interesser: readonly Interesse[] = [...interesseMapping.keys()];
 
 export const findRelevant = (interesse: Interesse | null | undefined): readonly Fag[] => {
     if (interesse) {
@@ -36,7 +43,7 @@ export const findRelevant = (interesse: Interesse | null | undefined): readonly 
 
         (interesseMapping.get(interesse) || []).forEach(id => {
             addDownstream(id)
-            addUpstream(id)
+            // addUpstream(id)
         })
 
         return Fag.filter(fag => relevantIds.has(fag.id));
