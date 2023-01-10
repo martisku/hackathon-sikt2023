@@ -11,10 +11,10 @@ const dagreGraph = new graphlib.Graph();
 dagreGraph.setDefaultEdgeLabel(() => ({}));
 
 const nodeWidth = 172;
-const nodeHeight = 36;
+const nodeHeight = 72;
 
-const getLayoutedElements = (nodes: any[], edges: any[], direction = 'TB') => {
-  const isHorizontal = direction === 'LR';
+const getLayoutedElements = (nodes: any[], edges: any[], direction = 'BT') => {
+  const isHorizontal = direction === 'RL';
   dagreGraph.setGraph({ rankdir: direction });
 
   nodes.forEach((node) => {
@@ -29,8 +29,8 @@ const getLayoutedElements = (nodes: any[], edges: any[], direction = 'TB') => {
 
   nodes.forEach((node) => {
     const nodeWithPosition = dagreGraph.node(node.id);
-    node.targetPosition = isHorizontal ? 'left' : 'top';
-    node.sourcePosition = isHorizontal ? 'right' : 'bottom';
+    node.targetPosition = isHorizontal ? 'right' : 'bottom';
+    node.sourcePosition = isHorizontal ? 'left' : 'top';
 
     // We are shifting the dagre node position (anchor=center center) to the top left
     // so it matches the React Flow node anchor point (top left).

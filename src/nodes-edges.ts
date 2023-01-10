@@ -3,6 +3,8 @@ import {Fag, FagId} from "./model";
 const position = { x: 0, y: 0 };
 const edgeType = 'smoothstep';
 
+const bestaatteFag: FagId[] = ["IN1000", "IN1010", "IN1020", "IN1030"];
+
 const findNodes = () => {
     const relevantIds: FagId[] = []
     Fag.forEach(fag => {
@@ -14,7 +16,14 @@ const findNodes = () => {
     const relevant = Fag.filter(fag => relevantIds.indexOf(fag.id) !== -1)
 
     return relevant.map(fag =>
-        ({id: fag.id, data: {...fag, label: fag.id}, position, label: fag.id})
+        {
+            console.log(bestaatteFag.includes(fag.id))
+            const isBestaatt = bestaatteFag.includes(fag.id)
+            const isKvalifisert = fag["Obligatoriske forkunnskaper"].some(fagkrav => bestaatteFag.includes(fagkrav))
+            const colorcode = isBestaatt? 'bestaatt' : isKvalifisert? 'kvalifisert' : 'ukvalifisert'
+            const label = (fag.id+" "+fag["Kort om emnet"]).slice(0,40)
+            return{id: fag.id, data: {...fag, label: label}, position, label: fag.id, style:{width: 172, height: 52} ,className:colorcode }
+    }
     )
 }
 export const initialNodes = findNodes();

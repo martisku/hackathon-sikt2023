@@ -30,3 +30,15 @@ code {
 .layoutflow .controls button:first-child {
   margin-right: 10px;
 }
+
+.bestaatt {
+ background-color: rgba(158, 255, 136, 0.893) !important;
+} 
+
+.kvalifisert {
+  background-color: rgb(170, 191, 255) !important;
+}
+
+.ukvalifisert {
+  background-color: rgb(188, 188, 188) !important;
+}
