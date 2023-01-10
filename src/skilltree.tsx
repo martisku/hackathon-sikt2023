@@ -3,7 +3,7 @@ import ReactFlow, { addEdge, ConnectionLineType, useNodesState, useEdgesState, E
 import {graphlib, layout} from 'dagre';
 import 'reactflow/dist/style.css';
 
-import { initialNodes, initialEdges } from './nodes-edges.js';
+import { initialNodes, initialEdges } from './nodes-edges';
 
 import './index.css';
 
